@@ -1,0 +1,19 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    background-image: linear-gradient(70deg,rgba(0, 0, 100, 0.5), rgba(0, 0, 110, 0.6), rgba(0, 0, 120, .7)),
+      url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-inline: 30%;
+
+}
+
+#survey-form{
+    background-color: rgba(0,0,0,85%);
+
+}
+
