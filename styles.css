@@ -1,19 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;700&family=Source+Serif+4:opsz,wght@8..60,300&display=swap');
 
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  color: white;
-  background-image: linear-gradient(70deg,rgba(0, 0, 100, 0.5), rgba(0, 0, 110, 0.6), rgba(0, 0, 120, .7)),
-    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   font-family: 'Source Serif 4', serif;
   font-weight: 300;
+  color: white;
+  margin: 0;
   margin-bottom: 10em;
-  
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(70deg,rgba(0, 0, 100, 0.5), rgba(0, 0, 110, 0.6), rgba(0, 0, 120, .7)),
+  url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 #survey-form{
