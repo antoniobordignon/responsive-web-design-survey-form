@@ -26,9 +26,10 @@ body::before {
 
 #survey-form{
   background-color: rgba(0,0,0,85%);
-  margin: 0 20%;
+
   border-radius: .4em;
   padding: 1em;
+
 }
 
 h1 {
@@ -86,5 +87,21 @@ textarea {
 
 div{
   margin: 1em;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
 }
 
