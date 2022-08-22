@@ -95,17 +95,15 @@ div{
   .container {
     max-width: 540px;
   }
-  label, .dropdown{
-   font-size: 2.1em;  
-  }
-
-
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
+}
+
+@media screen and (max-width: 1024px) {
   label, .dropdown{
     font-size: 2.1em;  
    }
